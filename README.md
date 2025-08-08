@@ -1,23 +1,35 @@
 Minimalist To-Do App 📝
 Hey there! 👋 This is a simple and clean to-do list app I built to practice my HTML, CSS, and JavaScript skills. It's designed to be straightforward and helps you keep track of your tasks without any fuss. All your tasks are saved right in your browser.
 
-Features
-✏️ Add, Edit, and Delete Tasks: All the basics you'd expect. You can add new tasks, edit them directly in the list, and delete them when you're done.
+✅ Features Implemented:
+Add new tasks using the "Add Task" button or Enter key
 
-✅ Mark as Complete: Click the checkbox to cross off a task and keep track of your progress.
+Dynamically display the task list
 
-💾 Saves Your Work: Your to-do list is automatically saved in your browser, so your tasks will still be there when you come back.
+Mark tasks as completed (with visual changes)
 
-📱💻 Clean & Responsive: It's designed to look good and work well on any device, whether it's your phone or a desktop.
+Delete individual tasks
 
-📊 Helpful Stats: See how many tasks you have in total, how many you've completed, and how many are left.
+Clean and user-friendly layout using HTML, CSS, and JavaScript
 
+Persistent storage using Local Storage
 
-Challenges & Learnings 💡
-This was a fun project, but it came with a few interesting challenges:
+Editable tasks (when not completed)
 
-🧩 Inline Editing: Making the tasks editable directly in the list was a fun puzzle. I used the contentEditable attribute, but the real challenge was figuring out the best way to save the changes. I ended up using the blur event (when the user clicks away) and the keypress event for the "Enter" key to make it feel intuitive and seamless.
+Task statistics (Total, Completed, Remaining)
 
-🔄 State Management: Keeping the UI perfectly in sync with the underlying data (the tasks array) was crucial. After any action—like adding, deleting, or completing a task—I made sure to call a single render() function. This function redraws the entire list based on the current state of the tasks array, which prevents bugs and ensures the display is always accurate.
+⚙️ How to Run the App:
+Clone or download the repository
 
-💾 Persistent Storage: I wanted tasks to be there even after closing the browser. The challenge was correctly saving and retrieving the tasks array from localStorage. I learned to use JSON.stringify() to save the array as a string and JSON.parse() to load it back as an array, making sure to handle the initial case where no tasks have been saved yet.
+Open the index.html file in any modern web browser
+
+Start adding tasks and enjoy!
+
+⭐ Bonus Features / Challenges Faced:
+Implemented editable task text (only when tasks are not marked as complete)
+
+Added real-time task stats for total, completed, and remaining tasks
+
+Focused on clean UI with accessibility and UX in mind
+
+Faced some challenges with enabling inline editing while maintaining task structure, but resolved using contentEditable and DOM events
